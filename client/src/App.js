@@ -33,7 +33,7 @@ const App = () => {
       <SavedList list={[ /* This is stretch */]} />
 
       <Route path='/movies/:id'>
-        <Movie movies={movieList}/>
+        <Movie />
       </Route>
       <Route path='/' exact>
         <MovieList movies={movieList}/>
