@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useParams } from 'react';
 import axios from 'axios';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
+  const { id } = useParams()
+
  
   useEffect(() => {
     const id = 1;
